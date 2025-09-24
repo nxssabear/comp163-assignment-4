@@ -12,9 +12,3 @@ print(study_hours)
 print(social_points)
 print(stress_level)
 
-print("Choose the level of coursework you would like to take on this semester: ")
-print("(A) Light (12 credits)")
-print("(B) Normal (15 credits)")
-print("(C) Heavy (18 credits)")
-
-choice = input("Your choice: ") 
