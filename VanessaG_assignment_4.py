@@ -1,10 +1,11 @@
 #required variables
-student_name = input()
-current_gpa = float(input())
-study_hours = int(input())
-social_points = int(input())
-stress_level = int(input())
+student_name = ("Vanessa Gray")
+current_gpa = 4.0 #between 1.0-4.0
+study_hours = 30 # (ex. 25)
+social_points = 55 #(ex. 50)
+stress_level = 75 #0-100
 
+#test case 1:
 print("Welcome to College Life\nHere are your current stats:")
 print(student_name)
 print(current_gpa)
