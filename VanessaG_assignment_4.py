@@ -79,4 +79,47 @@ elif study_choice not in study_options:
 
 print()
 
+print("============= FINAL SCORES RELEASED =============")
 
+grades = ["A", "B", "C", "D"]
+
+final_grade = input("Enter your final grade for subject studied(A, B, C or D):\n")
+
+print()
+
+if final_grade not in grades:
+    print("Failed. You need to repeat this class to graduate.")
+
+elif final_grade in grades:
+    print("Congratulations! You passed and will be able to graduate.")
+
+print()
+
+if current_gpa <= 2.5:
+    if social_points <= 35:
+        print("You graduated with a plain social life.")
+    else:
+        print("You graduated and made sure you never missed a night out.")
+    
+if current_gpa <= 3.25:
+    if social_points <= 35:
+        print("You stayed on top of your work but missed out on your social life.")
+    else:
+        print("You balanced the best of both worlds: social and work!")
+
+if current_gpa <= 3.75:
+    if social_points <= 35:
+        print("You excelled outstandingly in your major but lacked in the social world.")
+    else:
+        print("Congrats! You lived the full college expereince all while staying on track!")
+
+else:
+    print("You soaked in your College Daze to the fullest. Well done!")
+
+print()
+
+print("Here are your final stats:")
+print(f"Final GPA: {current_gpa}")
+print(f"Final Hours Studied: {study_hours}")
+print(f"Final Social Points: {social_points}")
+print(f"Final Subject Studied: {study_choice}")
