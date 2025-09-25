@@ -37,3 +37,42 @@ elif choice == "C":
 else:
     print("Invalid") 
 
+study_options = ["Programming", "Math", "English", "History"] 
+study_choice = input("Choose a subject to study: Programming, Math, English, and History ")
+
+if study_choice in study_options:
+
+    if current_gpa <= 2.5 and study_hours <= 15:
+        print("You need to study.")
+    elif current_gpa <= 3.25 or study_hours <= 35:
+        print("Nice work! Let's keep on studying.")
+    elif current_gpa <= 3.75 and study_hours <= 50:
+        print("Success is in your nearby future.")
+    else:
+        print("Excellent!")
+
+    if study_choice == "Programming":
+        current_gpa += 0.4
+        social_points -= 5
+        print("Nice job! Studying programming helped boost your GPA, but you lost a few social points.")
+        
+    if study_choice == "Math":
+        current_gpa += 0.3
+        social_points += 3 
+        print("Studying Math helped boost your GPA and earned you some more social points!")
+
+    if study_choice == "English":
+        current_gpa += 0.1
+        social_points += 5
+        print("Keep up the good work. By studying English your social points increased along with a small boost in your GPA.")
+
+    if study_choice == "History":
+        current_gpa += 0.2
+        social_points += 4 
+        print("Nice going! Social points have increased with a small increase in GPA.")
+
+elif study_choice not in study_options:
+    print("This subject is not avaliable study.")
+
+
+
