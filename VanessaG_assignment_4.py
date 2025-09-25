@@ -86,7 +86,7 @@ grades = ["A", "B", "C", "D"]
 
 print("Scored have been released for the subject you studied.\n")
 
-final_grade = input("Enter your final grade for subject studied(A, B, C or D):\n")
+final_grade = input("Enter your final grade for subject studied (A, B, C or D):\n")
 
 print()
 
