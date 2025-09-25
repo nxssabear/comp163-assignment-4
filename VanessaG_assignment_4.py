@@ -19,6 +19,7 @@ print("(A) Easy (12 credits)")
 print("(B) Normal (15 credits)")
 print("(C) Hard (18 credits)")
 
+#main if statement for coursework choice
 choice = input("Your choice: ")
 
 if choice == "A":
@@ -43,6 +44,7 @@ print()
 study_options = ["Programming", "Math", "English", "History"] 
 study_choice = input("Choose a subject to study: Programming, Math, English, and History\n")
 
+#main if statement for study choice
 if study_choice in study_options:
 
     if current_gpa <= 2.5 and study_hours <= 15:
@@ -80,6 +82,7 @@ elif study_choice not in study_options:
 
 print()
 
+#test case 4:
 print("============= FINAL SCORES RELEASED =============")
 
 grades = ["A", "B", "C", "D"]
@@ -90,6 +93,7 @@ final_grade = input("Enter your final grade for subject studied (A, B, C or D):\
 
 print()
 
+#pass or fail check
 if final_grade not in grades:
     print("Failed. You need to repeat this class to graduate.")
 
@@ -98,6 +102,7 @@ elif final_grade in grades:
 
 print()
 
+#graduation messages
 if current_gpa <= 2.5:
     if social_points <= 35:
         print("You graduated with a plain social life.")
@@ -121,6 +126,7 @@ else:
 
 print()
 
+#final stats
 print("Here are your final stats:")
 print(f"Final GPA: {current_gpa}")
 print(f"Final Hours Studied: {study_hours}")
