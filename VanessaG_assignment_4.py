@@ -1,3 +1,4 @@
+#No AI was used to complete this assignment.
 #required variables
 student_name = ("Vanessa Gray")
 current_gpa = 4.0 #between 1.0-4.0
