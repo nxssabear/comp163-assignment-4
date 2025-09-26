@@ -101,6 +101,30 @@ if final_grade not in grades:
 elif final_grade in grades:
     print("Congratulations! You passed and will be able to graduate.")
 
+#main if statement for final grade
+if final_grade == "A":
+    if current_gpa <= 3.25:
+        current_gpa += 0.3
+    else:
+        current_gpa += 0.2
+elif final_grade == "B":
+    if current_gpa <= 3.00:
+        current_gpa += 0.2
+    else: 
+        current_gpa += 0.1
+elif final_grade == "C":
+    if current_gpa <= 2.5:
+        current_gpa -= 0.1
+    else:
+        current_gpa -= 0.2
+elif current_gpa == "D":
+    if current_gpa <= 2.0:
+        current_gpa -= 0.2
+    else:
+        current_gpa -= 0.3
+else:
+    current_gpa -= 1.0
+
 print()
 
 #graduation messages
